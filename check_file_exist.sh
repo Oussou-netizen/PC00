@@ -1,11 +1,14 @@
 #!/bin/bash
-#Script qui vérifie si un fichier existe ou pas
+# Script qui vérifie si un fichier existe ou pas
+
+# Demande à l'utilisateur d'entrer un nom de fichier
 echo -n "Entrez le nom du fichier : " 
 read fileName
-#La condition if permet de [ -f filename ] permet de verifier si le le fichier est regulier et qu'il existe
-#Si la condition est vraie, alors afficher "Le fichier 'nomFichier' existe !
+# Vérifie si le fichier est régulier et qu'il existe
 if [ -f "$fileName" ]; then
+   # Si le fichier existe, affiche un message
    echo "Le fichier '$fileName' existe ! "
- else #Sinon afficher  "Le fichier 'nomFichier' n'existe pas !
-   echo "Le fichier '$fileName' n'existe pas ! "
-fi #fin de la condition 
+ else 
+   # Si le fichier n'existe pas, affiche un message d'erreur
+   echo "Error: Le fichier '$fileName' n'existe pas ! "
+fi 
