@@ -7,5 +7,5 @@ read fileName
 if [ -f "$fileName" ]; then
    echo "Le fichier '$fileName' existe !"
  else #Sinon afficher  "Le fichier 'nomFichier' n'existe pas !
-   echo "Le fichier '$fileName' n'existe pas !"
+   echo "Le fichier '$fileName' n'existe pas !'"
 fi #fin de la condition 
