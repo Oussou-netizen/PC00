@@ -3,12 +3,12 @@
 
 # Demande à l'utilisateur d'entrer un nom de fichier
 echo -n "Entrez le nom du fichier : " 
-read fileName
+read filename
 # Vérifie si le fichier est régulier et qu'il existe
-if [ -f "$fileName" ]; then
+if [ -f "$filename" ]; then
    # Si le fichier existe, affiche un message
-   echo "Le fichier '$fileName' existe ! "
+   echo "Le fichier '$filename' existe ! "
  else 
    # Si le fichier n'existe pas, affiche un message d'erreur
-   echo "Error: Le fichier '$fileName' n'existe pas ! "
+   echo "Error: Le fichier '$filename' n'existe pas ! "
 fi 
